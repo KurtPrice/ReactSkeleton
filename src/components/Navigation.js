@@ -3,7 +3,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
 import{
-  BrowserRouter as Router,
   Link
 } from 'react-router-dom'
 
@@ -22,8 +21,6 @@ function Navigation() {
       leave: { opacity: 0  },
 
   })
-
-  //className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
 
   return(
     <nav>
