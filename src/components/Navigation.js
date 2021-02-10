@@ -55,10 +55,20 @@ function Navigation() {
                 <span className="font-bold"> The Menu </span>
                     <ul>
                         <li>
-                        <Link to="/" className="text-blue-500">App</Link>
+                        <Link 
+                          to="/"
+                          className="text-blue-500"
+                          onClick={() => setShowMenu(false)}>
+                            App
+                        </Link>
                         </li>
                         <li>
-                        <Link to="/settings" className="text-blue-500">Settings</Link>
+                        <Link
+                          to="/settings"
+                          className="text-blue-500"
+                          onClick={() => setShowMenu(false)}>
+                            Settings
+                        </Link>
                         </li>
                     </ul>
         </animated.div>
