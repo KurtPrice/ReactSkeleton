@@ -12,26 +12,17 @@ function App() {
   return (
     <div >
         <Header />
-
+        
         <Router>
-          <ul>
-            <li>
-              <Link to="/" className="text-blue-500">App</Link>
-            </li>
-            <li>
-              <Link to="/settings" className="text-blue-500">Settings</Link>
-            </li>
-          </ul>
+          <Switch>
+            <Route exact path="/">
+              <h2>This is the App page</h2>
+            </Route>
+            <Route path="/settings">
+              <h2>This is the settings page</h2>
+            </Route>
+          </Switch>
         </Router>
-
-        <Switch>
-          <Route exact path="/">
-            <h2>This is the App page</h2>
-          </Route>
-          <Route path="/settings">
-            <h2>This is the settings page</h2>
-          </Route>
-        </Switch>
 
         <Footer />
     </div>
