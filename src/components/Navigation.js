@@ -18,9 +18,10 @@ function Navigation() {
     })
 
     const transitions = useTransition(showMenu, null, {
-        from: { position: 'absolute', opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
+        from: { position: 'absolute', opacity: 0  },
+        enter: { opacity: 1  },
+        leave: { opacity: 0  },
+
     })
 
     //className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
@@ -43,6 +44,7 @@ function Navigation() {
                     style={props}>
                     ✌️
                 </animated.div>
+                )
             }
 
         </nav>
