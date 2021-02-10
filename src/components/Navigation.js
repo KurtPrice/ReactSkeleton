@@ -48,8 +48,8 @@ function Navigation() {
                 <animated.div 
                     key={key}
                     style={props}
-                    className="fixed bg-white top-0 left-0 w-3/4 h-full z-50 shadow">
-                        <span> The Menu </span>
+                    className="fixed bg-white top-0 left-0 w-3/4 h-full z-50 shadow p-5">
+                        <span className="font-bold"> The Menu </span>
                         <ul>
                             <li>App</li>
                             <li>Settings</li>
