@@ -10,9 +10,8 @@ import{
 function App() {
   return (
     <div >
-        <Header />
-
         <Router>
+          <Header />
           <Switch>
             <Route exact path="/">
               <h2 className="font-bold text-2xl">This is the App page</h2>
@@ -21,9 +20,8 @@ function App() {
               <h2 className="font-bold text-2xl">This is the settings page</h2>
             </Route>
           </Switch>
+          <Footer />
         </Router>
-
-        <Footer />
     </div>
   );
 }

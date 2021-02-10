@@ -53,7 +53,6 @@ function Navigation() {
             style={props}
             className="fixed bg-white top-0 left-0 w-3/4 h-full z-50 shadow p-5">
                 <span className="font-bold"> The Menu </span>
-                <Router>
                     <ul>
                         <li>
                         <Link to="/" className="text-blue-500">App</Link>
@@ -62,7 +61,6 @@ function Navigation() {
                         <Link to="/settings" className="text-blue-500">Settings</Link>
                         </li>
                     </ul>
-                </Router>
         </animated.div>
         )
       }
