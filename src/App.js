@@ -4,15 +4,14 @@ import Footer from './components/Footer'
 import{
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 function App() {
   return (
     <div >
         <Header />
-        
+
         <Router>
           <Switch>
             <Route exact path="/">
