@@ -16,10 +16,10 @@ function App() {
         <Router>
           <ul>
             <li>
-              <Link to="/" className="text-blue-500"></Link>
+              <Link to="/" className="text-blue-500">App</Link>
             </li>
             <li>
-              <Link to="/settings" className="text-blue-500"></Link>
+              <Link to="/settings" className="text-blue-500">Settings</Link>
             </li>
           </ul>
         </Router>
