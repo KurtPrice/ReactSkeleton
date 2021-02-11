@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from'react-router-dom'
 
-function NavigationMenu() {
+function NavigationMenu(props) {
   return(
     <span>
       <span className="font-bold"> The Menu </span>
@@ -10,7 +10,7 @@ function NavigationMenu() {
             <Link 
               to="/"
               className="text-blue-500"
-              onClick={() => setShowMenu(false)}>
+              onClick={props.closeMenu}>
                 App
             </Link>
             </li>
@@ -18,7 +18,7 @@ function NavigationMenu() {
             <Link
               to="/settings"
               className="text-blue-500"
-              onClick={() => setShowMenu(false)}>
+              onClick={props.closeMenu}>
                 Settings
             </Link>
             </li>
