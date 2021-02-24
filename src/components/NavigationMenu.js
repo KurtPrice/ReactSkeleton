@@ -3,27 +3,35 @@ import {Link} from'react-router-dom'
 
 function NavigationMenu(props) {
   return(
-    <span>
-      <span className="font-bold"> The Menu </span>
+    <div>
+      <div className="font-bold py-3"> The Menu </div>
         <ul>
             <li>
-            <Link 
-              to="/"
-              className="text-blue-500 py-3 border-t border-b"
-              onClick={props.closeMenu}>
-                App
-            </Link>
+              <Link 
+                to="/"
+                className="text-blue-500 py-3 border-t border-b block"
+                onClick={props.closeMenu}>
+                  Home
+              </Link>
             </li>
             <li>
-            <Link
-              to="/settings"
-              className="text-blue-500 py-3 border-t border-b"
-              onClick={props.closeMenu}>
-                Settings
-            </Link>
+              <Link
+                to="/settings"
+                className="text-blue-500 py-3 border-b block"
+                onClick={props.closeMenu}>
+                  Settings
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/products"
+                className="text-blue-500 py-3 border-b block"
+                onClick={props.closeMenu}>
+                  Products
+              </Link>
             </li>
         </ul>
-    </span>
+    </div>
   )
 }
 
